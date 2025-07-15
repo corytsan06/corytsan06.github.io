@@ -10,10 +10,11 @@
 
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      flex-direction: column;
+      position: relative;
     }
 
     img {
@@ -24,6 +25,24 @@
       line-height: 1.5;
       max-width: 600px;
     }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -31,15 +50,11 @@
   <p>
     Cory Tsan is a Sophomore undergraduate computer engineering student attending the University of California, Irvine.
   </p>
-<br><br>
 
-<a href="http://corytsan06.github.io/index.html">home</a> //
-<a href="http://corytsan06.github.io/projects.html">projects</a> //
-<!--<a href="http://jvscholz.com/blog/index.html">blog</a> // -->
-<!--<a href="https://drive.google.com/file/d/17CnAyDkTUckt3jNoQjzsUmVlzP1jdp6t/view?usp=sharing">resume</a> // -->
-<a href="http://corytsan06.github.io/contact.html">contact</a>
-
-<br>
-<br>
+  <footer>
+    <a href="http://corytsan06.github.io/index.html">home</a> //
+    <a href="http://corytsan06.github.io/projects.html">projects</a> //
+    <a href="http://corytsan06.github.io/contact.html">contact</a>
+  </footer>
 </body>
 </html>
