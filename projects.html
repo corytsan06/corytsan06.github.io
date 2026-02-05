@@ -43,9 +43,59 @@
     footer span {
       margin: 0 5px;
     }
+    /* Container for all projects */
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px; /* Space between projects */
+      padding: 20px;
+      margin-bottom: 80px; /* Space for the absolute footer */
+    }
+
+    /* Individual project styling */
+    .project-card {
+      max-width: 300px;
+    }
+
+    .project-card img {
+      width: 100%; /* Makes image fill the card width */
+      height: auto;
+      border-radius: 8px; /* Rounded corners for a modern look */
+      transition: transform 0.2s; /* Subtle hover effect */
+      border: 1px solid #ddd;
+    }
+
+    /* Hover effect to show it's clickable */
+    .project-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-top: 15px;
+      font-family: sans-serif;
+    }
   </style>
 </head>
 <body>
+  <div class="project-container">
+  <div class="project-card">
+    <a href="URL_TO_YOUR_PROJECT">
+      <img src="YOUR_IMAGE_PATH.jpg" alt="Project Name">
+    </a>
+    <h3>Flame Shield Sentinel</h3>
+    <p>A brief description of the technical challenges you solved.</p>
+  </div>
+
+  <div class="project-card">
+    <a href="URL_TO_YOUR_PROJECT">
+      <img src="YOUR_IMAGE_PATH.jpg" alt="Project Name">
+    </a>
+    <h3>Project Title</h3>
+    <p>Details about the ESP32 or CAN bus implementation.</p>
+  </div>
+</div>
   <footer>
     <a href="http://corytsan06.github.io/index.html">home</a> //
     <a href="http://corytsan06.github.io/about.html">about</a> //
