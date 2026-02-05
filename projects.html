@@ -58,11 +58,13 @@
     }
 
     .project-card img {
-      width: 100%; 
-      height: auto;
-      border-radius: 8px; 
-      transition: transform 0.2s; 
+      width: 100%;        /* Fills the width of the card */
+      height: 250px;      /* Force all images to this exact height */
+      object-fit: cover;  /* Cuts off the "extra" parts to prevent stretching */
+      object-position: center; /* Ensures the middle of the photo is visible */
+      border-radius: 8px;
       border: 1px solid #ddd;
+      display: block;
     }
 
     .project-card img:hover {
@@ -118,6 +120,7 @@
   </div>
 
   <div class="project-card">
+      <h3>Fit-Forge</h3>
     <a href="https://imgur.com/a/2ZrKbPH">
       <img src="https://i.imgur.com/2z816ov.png" alt="Fit-Forge">
     </a>
@@ -128,7 +131,6 @@
     </a>
   </div>
 
-    <h3>Fit-Forge</h3>
         <ul class = "project-bullets">
       <li>Developed firmware for an autonomous/remote-controlled vehicle using an Arduino UNO microcontroller, interfacing with an L2393D DC Motor Driver Shield to 
         manage DC motor control.
